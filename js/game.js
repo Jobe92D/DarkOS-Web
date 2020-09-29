@@ -7,8 +7,6 @@ function game_init()
     //canvas setup
     ctx.canvas.width = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
-
-
     game_loop();
 }
 
@@ -16,13 +14,14 @@ function game_loop()
 {
     update_game();
     draw_game();
-    
     window.requestAnimationFrame(game_loop);
 }
 
 function update_game()
 {
-
+    //canvas setup
+    ctx.canvas.width = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
 }
 
 function draw_game()
